@@ -1,0 +1,298 @@
+.profile-dropdown {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+  align-items: center;
+  height: 64px;
+  color: black;
+}
+
+.nav-search > input:focus {
+  outline: none;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 0px 10px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color: var(--rhgreen);
+}
+
+.nav-link:visited {
+  /* text-decoration: none; */
+  /* color: black; */
+}
+
+.nav-current {
+  color: var(--rhgreen);
+}
+
+.profile-dropdown {
+  position: absolute;
+  /* added z-index and background due to overlapping hover elements on product-cards */
+  margin: 5px 6px 15px -100px;
+  z-index: 10;
+  background: white;
+  /* added border radius so bottom left isnt sharp */
+  border-radius: 10px;
+  /* height: auto; */
+  box-shadow: 2px 4px 50px rgb(228, 228, 228);
+}
+
+.nav-profile-button {
+  border: 1px solid white;
+  border-radius: 40%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+.fa-user {
+  /* border: 1px solid lightgray; */
+  /* background-color: lightgray; */
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* profile dropdown CSS -------------------------------------------- */
+
+.profile-dropdown-container {
+  border: 1px solid var(--bordergray);
+  border-radius: 5px;
+  height: auto;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  /* padding: 10px 10px; */
+}
+
+.profile-dropdown-div {
+  /* height: 110px; */
+}
+
+.profile-dropdown-user {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  /* width: 100%; */
+  padding: 10px;
+  /* border-radius: 5px; */
+  border-bottom: 1px solid var(--bordergray);
+  overflow: hidden;
+}
+
+/* .profile-dropdown-user:hover {
+  background-color: lightgray;
+} */
+
+.profile-dropdown-name {
+  margin: 3px 0px 0px 7px;
+}
+
+.profile-dropdown-purchases {
+  padding: 4px 0px 0px 0px;
+  width: 100px;
+  height: 33px;
+  border-radius: 5px;
+}
+
+.profile-dropdown-purchases:hover {
+  background-color: lightgray;
+}
+
+.fa-clipboard-list {
+  height: 33px;
+  width: 20px;
+  padding: 4px 4px;
+}
+
+.profile-dropdown-logout {
+  /* width: 100%; */
+  height: 33px;
+  /* padding-top: 5px; */
+  border-radius: 5px;
+  padding: 10px;
+  overflow: hidden;
+  /* border-box: none; */
+}
+
+.profile-dropdown-logout:hover {
+  background-color: var(--hovergray);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.fa-sign-out-alt {
+  height: 20px;
+  width: 20px;
+  padding: 0px 4px;
+}
+
+/* profile logout signup CSS -------------------------------------------- */
+
+.profile-logsign-div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  /* by default buttons were xparent, so added background white */
+  background: white;
+}
+
+.login-sign-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+.login-sign-btn:hover {
+  background-color: lightgray;
+}
+
+/* Search Functionality ---------------    */
+
+.nav-logo-search-container {
+  display: flex;
+}
+
+.nav-logo-image {
+  filter: brightness(0);
+  width: 30px;
+  height: 30px;
+  margin: 10px 20px 0px 20px;
+}
+
+.nav-search {
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  margin: 5px 0 0 10px;
+  width: 600px;
+  height: 40px;
+}
+
+.fa-search {
+  color: gray;
+  padding: 5px 0px 0px 10px;
+
+  width: 20px;
+  height: 20px;
+}
+
+.nav-search-bar {
+  border: none;
+  height: 30px;
+  width: 90%;
+  outline: none;
+}
+
+/* search ------------------------------------- */
+
+/* .search-container {
+}
+
+.search-dropdown {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px;
+  width: 38vw;
+  top: 55px;
+  left: 90px;
+}
+
+.search-results {
+  cursor: pointer;
+  display: flex;
+}
+
+.search-results:hover {
+  background-color: lightgray;
+}
+
+.search-ticker {
+  width: 60px;
+}
+
+.search-divider {
+  width: 20px;
+  border-left: 1px solid black;
+} */
+
+.nav-search {
+  position: relative;
+}
+.nav-search-bar {
+  width: 100%;
+  padding: 8px 40px 8px 10px;
+  font-size: 16px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+}
+.search-results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  /* border-box: none; */
+}
+
+.search-results:hover {
+  background-color: var(--hovergray);
+}
+
+.search-ticker {
+  font-weight: bold;
+  margin-right: 10px;
+}

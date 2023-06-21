@@ -1,0 +1,20 @@
+/* TODO Add site wide styles */
+
+* {
+  font-family: "Hanken Grotesk", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  /* padding: 0px;
+  margin: 0px; */
+}
+
+:root {
+  --rhgreen: #00c805;
+  --hovergray: #f5f8fa;
+  --bordergray: #dae0e4;
+  --dev-border-red: 1px dotted red;
+  --dev-border-blue: 1px dotted blue;
+}
