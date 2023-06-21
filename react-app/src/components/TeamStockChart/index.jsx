@@ -32,14 +32,19 @@ function TeamStockChart({ oddsHistory }) {
 
 
       const labels = [2, 4, 6, 8]
-      const prices = [12.5, 5.5, 6.8, 7.5]
+    const prices = [12.5, 5.5, 6.8, 7.5]
+    const dates2 = oddsHistoryArray.map((data) => new Date(data.date))
+    const prices2 = oddsHistoryArray.map((data) => data.price);
+
+    console.log("dates2", dates2)
+      console.log("prices2", prices2);
 
 
       setStockChartData({
-        labels,
+        dates2,
         datasets: [
           {
-            data: prices,
+            data: prices2,
             backgroundColor: "none",
             borderColor: "#00C805",
             borderWidth: 2,
