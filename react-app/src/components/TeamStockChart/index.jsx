@@ -31,17 +31,19 @@ function TeamStockChart({ oddsHistory }) {
     }
 
 
-      const labels = [2, 4, 6, 8]
+      // const labels = ["5/14/2023", "6/14/2023", "7/14/2023", "8/20/2023"];
     const prices = [12.5, 5.5, 6.8, 7.5]
-    const dates2 = oddsHistoryArray.map((data) => new Date(data.date))
+    const labels = oddsHistoryArray.map((data) =>    //!! NOTE: DON'T RENAME. Must be names labels for some reason
+      new Date(data.date).toLocaleDateString()
+    );
     const prices2 = oddsHistoryArray.map((data) => data.price);
 
-    console.log("dates2", dates2)
+    console.log("dates2", labels)
       console.log("prices2", prices2);
 
 
       setStockChartData({
-        dates2,
+        labels,
         datasets: [
           {
             data: prices2,

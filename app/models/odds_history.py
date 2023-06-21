@@ -1,5 +1,6 @@
 from .db import db, environment, SCHEMA, add_prefix_for_prod
 from sqlalchemy.orm import validates
+from datetime import date
 
 class Odds_History(db.Model):
     __tablename__ = 'odds_histories'
